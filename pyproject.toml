@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "ai-search"
+version = "0.1.0"
+description = ""
+authors = ["carat-jhcha <jhcha@carat.im>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.2.14"
+langchain-openai = "^0.1.22"
+langchain_community = "^0.2.9"
+html2text = "^2024.2.26"
+python-dotenv = "^1.0.1"
+tiktoken = "^0.7"
+tqdm = "^4.66.4"
+minify-html = "^0.15.0"
+free-proxy = "^1.1.1"
+playwright = "^1.43.0"
+undetected-playwright = "^0.3.0"
+semchunk = "^1.0.1"
+pandas = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+mypy = "^1.10.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+notebook = "^7.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
